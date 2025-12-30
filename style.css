@@ -2,120 +2,112 @@ body{
         background-color: black;
 }
 
-.header{
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        margin: 0;
-}
-
-
 *{
         font-family: 'Roboto';
         color: white;
+        margin: 0px;
+        padding: 0px;
 }
 
-h3{
-        margin: 0;
-}
 .navbar{
-        margin: 10px 10px 0px 10px;
-        text-align: right;
+        display: flex;
+        justify-content: space-between;
 }
 
-#About_me{
-        grid-column-start: 6;
-}
-
-#logo{
-        text-align: left;
-        margin-right: 0;
-}
-
-.container{
+.aboutme_content{
         display: grid;
-        grid-template-columns: 2;
-        margin-top: 140px;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 40px;
 }
 
-.ifybild{
+.aboutme_content--picture{
         display: flex;
-        justify-content: flex-start;
-}
-
-.text{
-        display: flex;
-        flex-direction: column;
         justify-content: center;
 }
 
-#intro{
-        grid-column-start: 2;
-        padding-left: 400px;
-}
-
-#tech{
-        grid-column-start: 2;
+.aboutme_content--text{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        width: 450px;
-        align-items: start;
-        padding-left: 130px;
-}
-
-#tech-desc{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 500px;
-        padding-left: 140px;
-}
-
-img{
+        gap: 10px;
         align-items: center;
+        justify-content: center;
 }
 
-.projekte{
-        margin-bottom: 50px;
+.aboutme_content > p{
+        text-align: center;
+        max-width: 50%;
 }
 
-#ifeanyi{
-        border-radius: 40%; 
-        margin-left: 60px;
+.projects_content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 40px;
 }
 
-@media (max-width: 950px){
-        .container{
+.projects_content--text{
+        display: flex;
+        justify-content: center;
+        margin-left: 40px;
+}
+
+.projects_content--picture{
+        display: flex;
+        justify-content: center;
+}
+
+.contact_content{
+        display: flex;
+        justify-content: space-between;
+}
+
+
+
+@media (max-width: 500px){
+        .navbar{
+                margin: 10px 10px 0px 10px;
+        }
+
+        .navbar > h2, a{
+                font-size: 14px;
+        }
+        .navbar_name{
+                display: none;
+        }
+
+        .aboutme_content, .projects_content{
+                align-items: center;
                 grid-template-columns: 1fr;
-                grid-template-rows: 2fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 20px;
+                max-height: 60vh;
+                margin-top: 5px;
+        }
+
+
+        .aboutme_content--text{
+                display: inline-flex;
+                justify-content: start;
                 align-items: center;
-        }
-
-        #tech{
-                grid-area: 2 / 1;
-                padding-left: 0;
-        }
-
-        #intro{
-                grid-area: 2 / 1;
-                align-items: center;
-                padding-left: 0;
-        }
-
-        #tech-desc{
-                padding-left: 0;
-                align-items: center;
-        }
-
-        #ifeanyi{
-                margin-left: 0px;
-        }
-
-        .ifybild{
-                align-items: center;
-        }
-
-        *{
                 text-align: center;
+        }
+
+        .projects_content--text{
+                grid-row: 2;
+                text-align: center;
+                margin: 0px  10px  0  10px;
+        }
+        .projects_content--picture{
+                grid-row: 1;
+        }
+
+        .contact_content{
+                flex-direction: column;
+                align-items: center;
+        }
+
+        footer > a, h2{
+                font-size: 14px;
         }
 }

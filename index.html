@@ -3,53 +3,56 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link  
-                rel="Stylesheet"
-                href="./style.css"
-        />
+        <title>Louis Portfolio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link
+                rel="stylesheet"
+                href="./style.css"
+        />
 </head>
 <body>
-        <section id="header">
-                <div class="header">
-                        <h3 id="logo" class="navbar">Louis Isichei</h3>
-                        <a href="#header" id="About_me" class="navbar"><h3 >About me</h3></a>
-                        <a href="#projekte" class="navbar"><h3 >Projekte</h3></a>
-                        <a href="#header" id="Kontakt" class="navbar"> <h3>Kontakt</h3></a>
+        <header>
+                <div class="navbar">
+                        <h2 class="navbar_name">Louis Ifeanyi Isichei</h2>
+                        <a href="#aboutme" class="navbar_aboutme"><h2>About me</h2></a>
+                        <a href="#projects" class="navbar_projects"><h2>Projects</h2></a>
+                        <a href="#contact" class="navbar_contact"><h2>Contact</h2></a>
                 </div>
-                <hr/>
-                <div class="picture container">
-                        <div class="ifybild">
-                                <img src="./images/ify.png" id="ifeanyi" height="600" > 
-                        </div>
-                        <div class="text" id="intro">
-                                <h1 style="font-weight: bold; font-size: 60px;">Louis Ifeanyi Isichei</h1>
-                                <p style="font-size: 30px;">Studentischer Berater mit Leidenschaft für Web Development, Automatisierung und Projektleitung – von React-Apps bis Qualitätsmanagement.</p>
-                        </div>
-                </div>
-        </section>  
+        </header>
 
-        <section id="projekte">
-                <div class="projekte container">
-                        <div id="tech-desc" class="text">
-                                <h1>Mit den größten Tools die zur Verfügung stehen bereits gearbeitet</h1>
-                                <p>Ich habe praktische Erfahrung in der Automatisierung komplexer Workflows mit Tools wie n8n und Make.com, wo ich Web-Scraping (z. B. mit Bright Data), Lead-Generierung und E-Mail-Sequenzen via Brevo/HubSpot umgesetzt habe – inklusive Server-Setups auf Ubuntu und Chatbot-Integrationen. Ergänzt durch OpenAI-API-Nutzung für KI-gestützte Inhalte und Troubleshooting von HubSpot-Integrationen in n8n, baue ich effiziente, skalierbare Lösungen für Content-Automatisierung und CRM-Prozesse. Diese Projekte haben meine Fähigkeiten in API-Handhabung, Fehlerbehebung und nahtloser Tool-Kombination geschärft.</p>
+        <main>
+                <section id="aboutme">
+                        <div class="aboutme_content">
+                                <div class="aboutme_content--picture">
+                                        <img src="./images/ify.png" height="400" alt="picture of louis ifeanyi">
+                                </div>
+                                <div class="aboutme_content--text">
+                                        <h2>Louis Ifeanyi Isichei</h2>
+                                        <p>Studentischer Berater mit Leidenschaft für Web Development, Automatisierung und Projektleitung – von React-Apps bis Qualitätsmanagement.</p>
+                                </div>
                         </div>
-                        <div id="tech">
-                                <img src="./images/techstack.png" height="300px">
+                </section>
+
+                <section id="projects">
+                        <div class="projects_content">
+                                <div class="projects_content--text">
+                                        <p>Ich habe praktische Erfahrung in der Automatisierung komplexer Workflows mit Tools wie n8n und Make.com, wo ich Web-Scraping (z. B. mit Bright Data), Lead-Generierung und E-Mail-Sequenzen via Brevo/HubSpot umgesetzt habe – inklusive Server-Setups auf Ubuntu und Chatbot-Integrationen. Ergänzt durch OpenAI-API-Nutzung für KI-gestützte Inhalte und Troubleshooting von HubSpot-Integrationen in n8n, baue ich effiziente, skalierbare Lösungen für Content-Automatisierung und CRM-Prozesse. Diese Projekte haben meine Fähigkeiten in API-Handhabung, Fehlerbehebung und nahtloser Tool-Kombination geschärft.</p>
+                                </div>
+                                <div class="projects_content--picture">
+                                        <img src="./images/techstack.png" alt="Techstack including openAI, Anthropic, n8n and nake.com" height="200">
+                                </div>
                         </div>
+                </section>
+        </main>
+
+        <footer id="contact">
+                <div class="contact_content">
+                        <h2 class="contact_content--name">Louis Ifeanyi Isichei</h2>
+                        <a href="mailto:louisifeanyiisichei@gmail.com" class="contact_content--email"><h2>louisifeanyiisichei@gnail.com</h2></a>
+                        <a href="https://www.linkedin.com/in/louis-ifeanyi-isichei-ba6360249/" class="contact_content--linkedin">LinkedIn Profile</a>
                 </div>
-        </section>
-        <hr/>
-        <section id="contact">
-                <div class="contacts" style="display: flex; justify-content: space-between; align-items: center;">
-                        <h3>Louis Ifeanyi Isichei</h3>
-                        <a href="mailto:louisifeanyiisichei@gmail.com"><h4>louisifeanyiisichei@gmail.com</h4></a>
-                        <a href="https://www.linkedin.com/in/louis-ifeanyi-isichei-ba6360249/">LinkedIn Profile</a>
-                </div>
-        </section>
+        </footer>
 </body>
 </html>
